@@ -1,0 +1,443 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+
+:root {
+    --primary-color: #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: #e8f1fa;
+    --text-dark: #282d31;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+  
+    --max-width: 1200px;
+  }*/
+  
+nav {
+    background-color: #0d0e11;
+    color: #f3f4f6;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo a {
+    color:#f3f4f6;
+    text-decoration: none;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.nav_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links {
+    margin-right: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.links:hover {
+    background-color:blue;
+    border-radius: 5px; /* Optional: Add rounded corners on hover */
+    padding: 5px 10px; /* Optional: Adjust padding on hover */
+}
+
+/* Header styles */
+.section__container {
+    background-color: #333; /* Background color for the header */
+    color: white; /* Text color */
+    padding: 50px 0; /* Add padding to the header */
+    text-align: center; /* Center align text */
+    /* background-image: url(../assets/images/ocean-3605547_1280.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 0.6;  */
+}
+
+.header__container {
+    max-width: 800px; /* Set maximum width for content */
+    margin: 0 auto; /* Center align content */
+    text-align: center;
+    color: #fff;
+}
+
+.header__container h1 {
+    font-size: 36px; /* Adjust font size for headings */
+    margin: 10px 0; /* Add margin to headings */
+}
+
+.header__container p {
+    font-size: 18px; /* Adjust font size for paragraphs */
+    margin-bottom: 20px; /* Add bottom margin to paragraphs */
+}
+
+button {
+    background-color: #fff; /* Button background color */
+    color: #333; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add button border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #555; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+}
+
+/*about*/
+._about {
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.heading h1 {
+    color: #ee806c;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.about_content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+
+.about_content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about_content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.about_content button {
+    display: inline-block;
+    background-color: #ee806c;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.about_content button:hover {
+    background-color: #ee806c;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.about_image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .heading h1 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    ._about {
+        margin: 0px;
+    }
+    .about_container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .about_content {
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .about_content h2 {
+        font-size: 30px;
+    }
+    .about_content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .about_content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .about_image {
+        width: 100%;
+    }
+}
+
+/* Journey container styles */
+.container {
+    margin-bottom: 100px; /* Add margin to create distance between the journey container and the footer */
+}
+
+
+.journey_container {
+    background-color: #f9f9f9; /* Background color for the journey container */
+    padding: 50px 0; /* Add padding to the journey container */
+    margin-bottom: 50px;
+}
+
+.image-card {
+    padding: 2rem;
+    gap: 1.17356rem;
+    border-radius: 1.46694rem;
+    background: white;
+    margin: 5px;
+    float: left;
+    transition: all 0.3s;
+}
+
+/* .image-card:hover {
+    transform: scale(1.03);
+} */
+
+@media (min-width: 768px) {
+    .image-card {
+        padding: 1.46694rem 1.1735rem 1.1735rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .image-card {
+        gap: 1.1735rem;
+    }
+}
+
+.image-card h3 {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.76031rem;
+    margin-bottom: 0.07rem;
+}
+
+@media (min-width: 768px) {
+    .image-card h3 {
+        font-size: 1.125rem;
+    }
+}
+
+.image-card p {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.46694rem;
+}
+.image-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* contact section */
+._contact {
+    min-height: 100vh;
+    background-color:#f3f4f6;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact_container h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-form {
+    text-align: left;
+}
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ecc6c6;
+    color: #333;
+}
+
+input:focus
+textarea:focus
+    outline:none
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+
+}
+
+.contact-info {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info i {
+    margin: 10px;
+    color: #ecc6c6;
+}
+
+@media screen and (max-width: 768px){
+    .contact_container{
+        padding: 20px;   
+    }
+    .contact-wrapper {
+        grid-template-columns: 1fr
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: white; /* Text color */
+    padding: 56.15px 103.41px 55.5px 104px;
+    width: 1100px;
+    text-align: center; /* Center align text */
+    margin-top: 40px;
+    border-radius: 22.96px;
+    display: flex;
+    margin: 62.69px auto 163.87px;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.footer__container {
+    max-width: 800px; /* Set maximum width for content */
+    margin: 0 auto; /* Center align content */
+    text-align: center;
+    padding: 56.15px 103.41px 55.5px 104px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer__container h4 {
+    font-size: 24px; /* Adjust font size for footer heading */
+    margin-bottom: 20px; /* Add bottom margin to footer heading */
+    /* line-height: 68.879px; */
+}
+
+.social__icons {
+    font-size: 24px; /* Adjust font size for social icons */
+    margin-bottom: 20px; /* Add bottom margin to social icons */
+}
+
+.social__icons span {
+    margin-right: 10px; /* Add right margin between social icons */
+}
+
+.footer__container p {
+    font-size: 18px; /* Adjust font size for footer text */
+    line-height: 68.879px;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+    /* Mobile-specific styles */
+    /* Adjust styles for smaller screens */
+    .nav__logo a {
+        font-size: 20px;
+    }
+    
+    .nav_links {
+        flex-direction: column;
+    }
+    
+    .links {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .destination_images img {
+        width: calc(50% - 20px); /* 2 images per row */
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
+
+/* Media query for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet-specific styles */
+    /* Adjust styles for tablets */
+    .nav__logo a {
+        font-size: 22px;
+    }
+
+}
+
+/* Media query for screens larger than 1023px (e.g., desktops) */
+@media (min-width: 1024px) {
+    /* Desktop-specific styles */
+    /* Adjust styles for desktops */
+    .nav__logo a {
+        font-size: 24px;
+    }
+}
+
+
+
+  
